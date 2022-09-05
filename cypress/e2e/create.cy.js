@@ -55,7 +55,7 @@ describe('Recomendação', () => {
         createPage.location(foodtruck)
         createPage.form(foodtruck)
         createPage.submit()
-        createPage.modal.haveText('Esse food fruck já foi cadastrado!')
+        createPage.modal.haveText('Esse food truck já foi cadastrado!')
     });
 
     it('Todos os campos são obrigatorios', () => {
@@ -75,6 +75,6 @@ describe('Recomendação', () => {
         mapPage.createLink()
         createPage.location(foodtruck)
         createPage.submit()
-        createPage.modal.haveText('O campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
+        createPage.modal.haveText('Os campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
     })
 })
