@@ -19,7 +19,7 @@ describe('Recomendação', () => {
         }
 
         cy.apiCreateUser(user)
-        cy.apiLogin(user)
+        cy.uiLogin(user)
 
         mapPage.createLink()
 
@@ -47,7 +47,7 @@ describe('Recomendação', () => {
         }
 
         cy.apiCreateUser(user)
-        cy.apiLogin(user)
+        cy.uiLogin(user)
         cy.apiCreateFoodTruck(foodtruck)
 
         mapPage.createLink()
@@ -70,7 +70,7 @@ describe('Recomendação', () => {
         }
 
         cy.apiCreateUser(user)
-        cy.apiLogin(user)
+        cy.uiLogin(user)
 
         mapPage.createLink()
         createPage.location(foodtruck)

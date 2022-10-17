@@ -70,7 +70,6 @@ describe('Login', () => {
   })
 
   it('Todos os campos devem ser obrigatório', () => {
-
     loginPage.go()
     loginPage.submit()
     loginPage.modal.haveText('Por favor, informe suas credenciais!')

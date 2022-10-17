@@ -57,14 +57,7 @@ Cypress.Commands.add('apiLogin', (payload) => {
         body: payload
     }).then(response => {
         expect(response.status).to.eq(200)
-
         Cypress.env('token', response.body.token)
-
-        cy.visit('/map', {
-            onBeforeLoad: () => {
-                localStorage.setItem('qtruck:token', response.body.token)
-            }
-        })
     })
 })
 
@@ -81,7 +74,7 @@ Cypress.Commands.add('apiCreateFoodTruck', (payload) => {
 })
 
 Cypress.Commands.add('uiLogin', (user) => {
-    loginPage.go()
+    loginPage.go('-19.965201096407863', '-43.96468877792359')
     loginPage.form(user)
     loginPage.submit()
 
