@@ -9,6 +9,7 @@ module.exports = defineConfig({
       return config
       // implement node event listeners here
     },
+    broser: 'chrome',
     baseUrl: 'http://localhost:3000',
     viewportWidth: 1920,
     viewportHeight: 1080,
